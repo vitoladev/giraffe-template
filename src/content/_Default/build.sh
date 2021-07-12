@@ -9,7 +9,7 @@ else
 fi
 #endif
 dotnet restore
-dotnet build --no-restore
+dotnet build ./src/AppName.1 --no-restore
 #if (!ExcludeTests)
-dotnet test --no-build
+dotnet test ./tests/AppName.1.Tests --no-build
 #endif
